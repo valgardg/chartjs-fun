@@ -1,12 +1,6 @@
 <template>
 	<nav class="navbar sticky-top navbar-expand-lg header-div">
 		<div class="container-fluid d-flex justify-content-between">
-			<div class="col-2">
-				<img src="@/assets/images/iceland-mountains.png" class="header-logo" />
-			</div>
-			<div class="col-2 d-flex justify-content-end">
-				<button class="btn generic-header-button">Button</button>
-			</div>
 		</div>
 	</nav>
 </template>
@@ -15,11 +9,11 @@
 .header-div {
 	margin-top: 0px;
 	padding: 18px 10px;
-	background-color: #bfeadd;
+	background-color: rgb(33, 33, 33);
 	border: 0px;
 	border-bottom: 2px;
 	border-style: solid;
-	border-color: rgb(0, 135, 97);
+	border-color: rgb(33, 33, 33);
 }
 .header-logo {
 	width: 140px;
@@ -28,8 +22,8 @@
 }
 .generic-header-button {
 	margin-right: 4rem;
-	color: white;
-	background-color: rgb(5, 183, 121);
+	color: rgb(33, 33, 33);
+	background-color: rgb(255, 255, 255);
 	font-weight: 600;
 }
 </style>

@@ -16,6 +16,14 @@ import { Bar } from 'vue-chartjs'
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend)
 
+const data = [
+    { month: 'January', count: 1560 },
+    { month: 'February', count: 3270 },
+    { month: 'March', count: 1890 },
+    { month: 'April', count: 1302 },
+    { month: 'May', count: 1580 },
+  ];
+
 export default {
     name: 'App',
     components: {
@@ -24,8 +32,13 @@ export default {
     data() {
         return {
             data: {
-                labels: ['January', 'February', 'March'],
-                datasets: [{ data: [40, 20, 12] }]
+                labels: data.map(row => row.month),
+                datasets: [
+                    {
+                        label: 'Spending per month',
+                        data: data.map(row => row.count)
+                    }
+                ]
                 },
             options: {
                 responsive: true
